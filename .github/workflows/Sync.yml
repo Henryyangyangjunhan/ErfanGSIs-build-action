@@ -1,0 +1,14 @@
+name: Sync
+on:
+  workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Syncing
+        run: |
+          cd $GITHUB_WORKSPACE/.github/workflows
+          sudo rm -r AB.yml
+          sudo rm -r Aonly.yml
+          wget https://raw.githubusercontent.com/mi20210630/ErfanGSIs-build-action/main/.github/workflows/AB.yml
+          wget https://raw.githubusercontent.com/mi20210630/ErfanGSIs-build-action/main/.github/workflows/Aonly.yml

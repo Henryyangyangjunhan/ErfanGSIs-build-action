@@ -17,10 +17,6 @@ jobs:
     steps:
        - name: Checkout
          uses: actions/checkout@master
-           
-       - name: Clean up the workspace
-         run: |
-           sudo rm -r ErfanGSIs
 
        - name: Initialization environment
          run: |

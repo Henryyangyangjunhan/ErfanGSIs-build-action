@@ -1,6 +1,6 @@
 # ErfanGSIs-build
-Language: 中文/<a href=README_EN.md> En </a> </span>
-> Version:0.1-alpha2
+Language: 中文 / <a href=README_EN.md> En </a> </span>
+> Version: 0-beta
 ## 一个自动跑 ErfanGSIs 的脚本。 
 ### 步骤如下： 
 - 首先，fork 这个仓库。 
@@ -8,7 +8,7 @@ Language: 中文/<a href=README_EN.md> En </a> </span>
 - 最后，在 Release 里下载
 > Release名称为ErfanGSI
 
-## 其他注意事项 ##
+## 其他注意事项:
 因GitHub Release无法上传超过2GB的文件，所以此项目把超过2GB的文件进行拆分，如你的项目运行完后发现release里的文件被拆分成了多个（后缀名为zip00，zip01这种），请用Linux系统将其合并
 
 ```

@@ -18,6 +18,10 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
            
+       - name: Clean up the workspace
+         run: |
+           sudo rm -r ErfanGSIs
+
        - name: Initialization environment
          run: |
             sudo -E apt-get -qq install git wget

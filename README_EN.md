@@ -1,6 +1,6 @@
 # ErfanGSIs-build
-Language: EN/<a href=README.md> 中文 </a> </span>
-> Version:0.1-alpha
+Language: EN / <a href=README.md> 中文 </a> </span>
+> Version:0-beta
 ## The script which can build ErfanGSI online
 ### Steps:
 - First, Fork this repository;

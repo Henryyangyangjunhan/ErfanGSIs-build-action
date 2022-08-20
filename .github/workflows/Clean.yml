@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Clean up the Workspace
         run: |
-          sudo rm -rf /
+          sudo rm -rf ./*

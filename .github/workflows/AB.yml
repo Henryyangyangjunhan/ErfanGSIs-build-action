@@ -35,7 +35,7 @@ jobs:
          run: |
               cd ErfanGSIs
               mkdir ./output
-              sudo apt install python3-pip
+              sudo apt install python-pip
               sudo bash ./setup.sh
        
        - name: Download Stock Rom

@@ -52,7 +52,7 @@ jobs:
        - name: Upload GSI
          uses: ncipollo/release-action@v1.8.6
          with:
-           artifacts: ErfanGSIs/output/upload/*
+           artifacts: ErfanGSIs/output/*
            name: ErfanGSI
            tag: ErfanGSI
            token: ${{ secrets.GITHUB_TOKEN }}

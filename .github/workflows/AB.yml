@@ -39,12 +39,12 @@ jobs:
            ./configure
            make
            sudo make install
+           sudo apt remove python-2.7.17
     
        - name: Setting up requirements
          run: |
               cd ErfanGSIs
               mkdir ./output
-              sudo apt install python3-pip
               sudo bash ./setup.sh
        
        - name: Download Stock Rom

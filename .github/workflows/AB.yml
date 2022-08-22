@@ -43,11 +43,11 @@ jobs:
               cd ErfanGSIs
               sudo bash ./url2GSI.sh -c --ab "${{ github.event.inputs.ROM_URL }}" "${{ github.event.inputs.ROM_TYPE }}"
               
-       - name: Pack GSI
-         run: |
+       #- name: Pack GSI
+         #run: |
 
-           sudo apt install p7zip-full
-           7za a -t7z -r Generic ErfanGSIs/output/*
+           #sudo apt install p7zip-full
+           #7za a -t7z -r Generic ErfanGSIs/output/*
               
        - name: Upload GSI
          uses: actions/upload-artifact@v3

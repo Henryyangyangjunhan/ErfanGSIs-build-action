@@ -30,6 +30,11 @@ jobs:
          run: |
               sed -i 's/\|\| exit 1//g' ErfanGSIs/url2GSI.sh
               sed -i 's/exit 1//g' ErfanGSIs/url2GSI.sh
+       - name: Setup Pyt
+- uses: actions/setup-python@v4
+  with:
+    python-version: '3.10' 
+- run: python my_script.py
        
        - name: Setting up requirements
          run: |

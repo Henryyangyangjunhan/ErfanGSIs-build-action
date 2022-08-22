@@ -50,7 +50,7 @@ jobs:
            7za a -t7z -r Generic ErfanGSIs/output/*
               
        - name: Upload GSI
-         uses: ncipollo/release-action@v1- uses: actions/upload-artifact@v3
+         uses: actions/upload-artifact@v3
          with:
            name: my-artifact
            path: ErfanGSIs/output/

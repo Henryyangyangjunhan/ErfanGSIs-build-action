@@ -11,7 +11,7 @@ on:
         required: true
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
@@ -45,9 +45,9 @@ jobs:
               
        - name: Pack GSI
          run: |
-           cd $GITHUB_WORKSPACE/ErfanGSIs
+
            sudo apt install p7zip-full
-           7z a GSI.7z ./output
+           7za a -t7z -r Generic ErfanGSIs/output/*
               
        - name: Upload GSI
          uses: ncipollo/release-action@v1.8.6

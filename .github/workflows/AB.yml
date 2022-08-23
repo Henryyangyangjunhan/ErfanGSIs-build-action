@@ -43,8 +43,9 @@ jobs:
     
        - name: Setting up requirements
          run: |
-              sudo apt update
-              sudo apt upgrade
+              alias python='python2'
+              alias python3='python'
+              alias pip3='pip'
               cd ErfanGSIs
               mkdir ./output
               sudo bash ./setup.sh

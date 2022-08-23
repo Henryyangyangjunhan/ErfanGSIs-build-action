@@ -39,7 +39,7 @@ jobs:
            ./configure
            make
            sudo make install
-           sudo apt remove python-2.7.17
+           sudo apt remove python2
     
        - name: Setting up requirements
          run: |
